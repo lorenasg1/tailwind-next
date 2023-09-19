@@ -1,7 +1,15 @@
+'use client'
+
+import { SettingsTabs } from "@/components/SettingsTabs"
+
+
+
 export default function Home() {
   return (
-    <main className="">
-      <h1>hello</h1>
-    </main>
+    <>
+      <h1 className="text-3xl font-medium text-zinc-900">Settings</h1>
+
+      <SettingsTabs />
+    </>
   )
 }
