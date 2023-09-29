@@ -10,7 +10,7 @@ import {
   SquareStack,
   Users
 } from 'lucide-react'
-import { InputControl, InputPrefix, InputRoot } from '../Input'
+import { InputControl, InputPrefix, InputRoot } from '../Form/Input/Input'
 import { NavItem } from './NavItem'
 import { Profile } from './Profile'
 import { UsedSpaceWidget } from './UsedSpaceWidget'
