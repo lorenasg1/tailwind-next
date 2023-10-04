@@ -1,5 +1,6 @@
 'use client'
 
+import { Button } from '@/components/Button'
 import * as FileInput from '@/components/Form/FileInput'
 import { Select } from '@/components/Form/Select'
 import { SelectItem } from '@/components/Form/Select/SelectItem'
@@ -22,8 +23,8 @@ export default function Home() {
             <span className="text-small text-zinc-500">Update your photo and personal details here.</span>
           </div>
           <div className="flex items-center gap-2">
-            <button type="button" className="rounded-lg px-4 py-2 text-sm font-semibold border-zinc-300 text-zinc-700 hover:bg-zinc-50">Cancel</button>
-            <button type="submit" form="settings" className="rounded-lg px-4 py-2 text-sm font-semibold bg-violet-600 text-white hover:bg-zinc-700">Save</button>
+            <Button type="button" variant='outline'>Cancel</Button>
+            <Button type="submit">Save</Button>
           </div>
         </div>
 
@@ -101,21 +102,21 @@ export default function Home() {
                   <SelectItem text='Markdown' value='md' />
                 </Select>
                 <div className="flex items-center gap-1">
-                <button type="button" className="ml-auto hover:bg-zinc-50 p-2">
+                <Button type="button" variant='ghost'>
                   <Bold className="w-4 h-4 text-zinc-500" strokeWidth={3} />
-                </button>
-                <button type="button" className="ml-auto hover:bg-zinc-50 p-2">
+                </Button>
+                <Button type="button" variant='ghost'>
                   <Italic className="w-4 h-4 text-zinc-500" strokeWidth={3} />
-                </button>
-                <button type="button" className="ml-auto hover:bg-zinc-50 p-2">
+                </Button>
+                <Button type="button" variant='ghost'>
                   <Link className="w-4 h-4 text-zinc-500" strokeWidth={3} />
-                </button>
-                <button type="button" className="ml-auto hover:bg-zinc-50 p-2">
+                </Button>
+                <Button type="button" variant='ghost'>
                   <List className="w-4 h-4 text-zinc-500" strokeWidth={3} />
-                </button>
-                <button type="button" className="ml-auto hover:bg-zinc-50 p-2">
+                </Button>
+                <Button type="button" variant='ghost'>
                   <ListOrdered className="w-4 h-4 text-zinc-500" strokeWidth={3} />
-                </button>
+                </Button>
                 </div>
               </div>
               <Textarea />
@@ -132,9 +133,9 @@ export default function Home() {
               <FileInput.Control multiple />
             </FileInput.Root>
           </div>
-          <div className="flex items-center justify-end pt-5">
-          <button type="button" className="rounded-lg px-4 py-2 text-sm font-semibold border-zinc-300 text-zinc-700 hover:bg-zinc-50">Cancel</button>
-            <button type="submit" className="rounded-lg px-4 py-2 text-sm font-semibold bg-violet-600 text-white hover:bg-zinc-700">Save</button>
+          <div className="flex items-center justify-end pt-5 gap-2">
+            <Button type="button" variant='outline'>Cancel</Button>
+            <Button type="submit">Save</Button>
           </div>
         </form>
       </div>
