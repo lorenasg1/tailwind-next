@@ -7,10 +7,10 @@ export function Profile() {
       <img src="https://github.com/lorenasg1.png" alt="" className="h-10 w-10 rounded-full" />
 
       <div className="flex flex-1 flex-col truncate">
-        <span className="text-sm font-semibold text-zinc-700">
+        <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-100">
           Lorena Guedes
         </span>
-        <span className="truncate text-sm font-semibold text-zinc-500">
+        <span className="truncate text-sm font-semibold text-zinc-500 dark:text-zinc-400">
           lorenasg1@gmail.com
         </span>
       </div>
